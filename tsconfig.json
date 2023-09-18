@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+        "paths": {
+            "@utils/*": ["./utils/*"],
+            "@functions": ["./functions/index.ts"]
+        },
+        "esModuleInterop": true,
+        "resolveJsonModule": true
+    }
+}
