@@ -25,7 +25,11 @@ const existDiffsInSwaggerJson = (
   pathFromSwaggerJson: string,
   generatedSwaggerJson: SwaggerJson
 ) => {
-  const jsonFile = readFileSync(pathFromSwaggerJson, { encoding: "utf-8" });
+  const stringJsonFile = readFileSync(pathFromSwaggerJson, {
+    encoding: "utf-8",
+  });
+
+  const jsonFile = JSON.parse(stringJsonFile);
 
   return !!getDiff(jsonFile, generatedSwaggerJson).length;
 };

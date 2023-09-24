@@ -1,10 +1,20 @@
 {
     "compilerOptions": {
-        "paths": {
-            "@utils/*": ["./utils/*"],
-            "@functions": ["./functions/index.ts"]
-        },
-        "esModuleInterop": true,
-        "resolveJsonModule": true
-    }
+        "esModuleInterop": false,
+        "resolveJsonModule": true,
+        "outDir": "dist",
+        "module": "CommonJS",
+        "target": "es6",
+        "moduleResolution": "node",
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "sourceMap": true,
+        "strict": false
+    },
+    "exclude": [
+        "node_modules"
+    ],
+    "include": [
+    "./**/*.ts"
+    ],
 }

@@ -3,14 +3,14 @@ import { SwaggerJson } from "../@types/swaggerJsonSpec";
 
 export const inferCustomProperties = (
   swaggerJson: SwaggerJson,
-  options: SwaggerDocOptions
+  options?: SwaggerDocOptions
 ) => {
   const keys = Object.keys(options || {});
 
   if (keys.includes("info")) {
     swaggerJson.info = {
       ...swaggerJson.info,
-      ...options.info,
+      ...options?.info,
     };
   }
 };

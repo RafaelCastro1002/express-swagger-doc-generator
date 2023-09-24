@@ -1,7 +1,7 @@
-import listEndpoints, { Endpoint } from "express-list-endpoints";
+import * as listEndpoints from "express-list-endpoints";
 import { Express } from "express-serve-static-core";
 import { join } from "path";
-import swaggerUi from "swagger-ui-express";
+import * as swaggerUi from "swagger-ui-express";
 
 import { SwaggerDocOptions } from "./@types/SwaggerGeneratorDoc";
 import {
@@ -14,10 +14,10 @@ import {
 export const ROOT_TARGET_PATH = process.cwd();
 const NAME_JSON_EXPORT = "swagger.json";
 
-const getSwaggerJsonPath = (options: SwaggerDocOptions) =>
-  join(ROOT_TARGET_PATH, options.outputJsonPath || NAME_JSON_EXPORT);
+const getSwaggerJsonPath = (options?: SwaggerDocOptions) =>
+  join(ROOT_TARGET_PATH, options?.outputJsonPath || NAME_JSON_EXPORT);
 
-let LIST_ENDPOINTS: Endpoint[] = [];
+let LIST_ENDPOINTS: listEndpoints.Endpoint[] = [];
 
 export const generateDocSwagger = (
   expressInstance: Express,
@@ -33,7 +33,7 @@ export const generateDocSwagger = (
 
   updateSwaggerJsonFile(getSwaggerJsonPath(options), swaggerJson);
 
-  const routeExposeDoc = options.uiAccessRoute || "/doc";
+  const routeExposeDoc = options?.uiAccessRoute || "/doc";
 
   console.log(`Swagger documentation on ${routeExposeDoc}`);
 

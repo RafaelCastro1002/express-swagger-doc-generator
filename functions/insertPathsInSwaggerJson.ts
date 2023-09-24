@@ -1,4 +1,4 @@
-import listEndpoints from "express-list-endpoints";
+import * as listEndpoints from "express-list-endpoints";
 import { SwaggerJson } from "../@types/swaggerJsonSpec";
 import { insertMethodsInPathSwaggerJson } from "./insertMethodsInPathSwaggerJson";
 
@@ -28,7 +28,7 @@ export const insertPathsInSwaggerJson = (
 const extractPathParamNames = (routePath: string) => {
   const pathParamRegex = /:(\w+)/g;
   const paramNames: string[] = [];
-  let match: RegExpExecArray;
+  let match: RegExpExecArray | null;
 
   while ((match = pathParamRegex.exec(routePath)) !== null) {
     paramNames.push(match[1]);
