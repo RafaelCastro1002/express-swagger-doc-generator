@@ -37,9 +37,11 @@ export const generateDocSwagger = (
 
   console.log(`Swagger documentation on ${routeExposeDoc}`);
 
+  const optionsUI = { customCssUrl: "/public/css/swagger-ui.css" };
+
   expressInstance.use(
     routeExposeDoc,
     swaggerUi.serve,
-    swaggerUi.setup(swaggerJson)
+    swaggerUi.setup(swaggerJson, optionsUI)
   );
 };
