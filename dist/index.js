@@ -17,7 +17,8 @@ const generateDocSwagger = (expressInstance, options) => {
     (0, functions_1.updateSwaggerJsonFile)(getSwaggerJsonPath(options), swaggerJson);
     const routeExposeDoc = (options === null || options === void 0 ? void 0 : options.uiAccessRoute) || "/doc";
     console.log(`Swagger documentation on ${routeExposeDoc}`);
-    expressInstance.use(routeExposeDoc, swaggerUi.serve, swaggerUi.setup(swaggerJson));
+    const optionsUI = { customCssUrl: "/public/css/swagger-ui.css" };
+    expressInstance.use(routeExposeDoc, swaggerUi.serve, swaggerUi.setup(swaggerJson, optionsUI));
 };
 exports.generateDocSwagger = generateDocSwagger;
 //# sourceMappingURL=index.js.map
