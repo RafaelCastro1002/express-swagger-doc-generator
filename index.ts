@@ -13,6 +13,8 @@ import {
 
 const CSS_URL =
   "https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/4.1.0/swagger-ui.min.css";
+const JS_URL = "https://unpkg.com/swagger-ui-dist@3.23.1/swagger-ui-bundle.js";
+
 export const ROOT_TARGET_PATH = process.cwd();
 const NAME_JSON_EXPORT = "swagger.json";
 
@@ -39,7 +41,7 @@ export const generateDocSwagger = (
 
   console.log(`Swagger documentation on ${routeExposeDoc}`);
 
-  const optionsUI = { customCssUrl: CSS_URL };
+  const optionsUI = { customCssUrl: CSS_URL, customJs: JS_URL };
 
   expressInstance.use(
     routeExposeDoc,
