@@ -11,6 +11,8 @@ import {
   updateSwaggerJsonFile,
 } from "./functions";
 
+const CSS_URL =
+  "https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/4.1.0/swagger-ui.min.css";
 export const ROOT_TARGET_PATH = process.cwd();
 const NAME_JSON_EXPORT = "swagger.json";
 
@@ -37,7 +39,7 @@ export const generateDocSwagger = (
 
   console.log(`Swagger documentation on ${routeExposeDoc}`);
 
-  const optionsUI = { customCssUrl: "/public/css/swagger-ui.css" };
+  const optionsUI = { customCssUrl: CSS_URL };
 
   expressInstance.use(
     routeExposeDoc,
