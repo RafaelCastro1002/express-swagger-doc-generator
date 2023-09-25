@@ -6,7 +6,7 @@
   "author": "Rafael Castro <rafael.castro1002@gmail.com>",
   "license": "MIT",
   "private": false,
-  "version": "1.0.3",
+  "version": "1.0.4",
   "type": "commonjs",
   "scripts": {
     "build": "tsc"
