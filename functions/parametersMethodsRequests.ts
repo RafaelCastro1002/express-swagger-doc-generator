@@ -4,12 +4,18 @@ import {
   DEFAULT_PATH_PARAM_OPTIONS,
 } from "../constants/methodParameters";
 
-export const getParametersFromMethodRouter = (methodName: string) => {
+export const getParametersFromMethodRouter = (
+  methodName: "post" | "put" | "patch" | "delete" | "get"
+) => {
   const defaultMethodParametersByType = {
     post: [DEFAULT_BODY_PARAM_OPTIONS],
+    put: [DEFAULT_BODY_PARAM_OPTIONS],
+    patch: [DEFAULT_BODY_PARAM_OPTIONS],
+    delete: [],
+    get: [],
   };
 
-  return defaultMethodParametersByType[methodName] || [];
+  return defaultMethodParametersByType[methodName];
 };
 
 export const getPathParamsFromMethod = (pathParamNames: string[]) => {

@@ -5,8 +5,12 @@ const methodParameters_1 = require("../constants/methodParameters");
 const getParametersFromMethodRouter = (methodName) => {
     const defaultMethodParametersByType = {
         post: [methodParameters_1.DEFAULT_BODY_PARAM_OPTIONS],
+        put: [methodParameters_1.DEFAULT_BODY_PARAM_OPTIONS],
+        patch: [methodParameters_1.DEFAULT_BODY_PARAM_OPTIONS],
+        delete: [],
+        get: [],
     };
-    return defaultMethodParametersByType[methodName] || [];
+    return defaultMethodParametersByType[methodName];
 };
 exports.getParametersFromMethodRouter = getParametersFromMethodRouter;
 const getPathParamsFromMethod = (pathParamNames) => {

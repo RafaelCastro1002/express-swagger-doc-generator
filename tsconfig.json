@@ -1,20 +1,16 @@
 {
-    "compilerOptions": {
-        "esModuleInterop": false,
-        "resolveJsonModule": true,
-        "outDir": "dist",
-        "module": "CommonJS",
-        "target": "es6",
-        "moduleResolution": "node",
-        "emitDecoratorMetadata": true,
-        "experimentalDecorators": true,
-        "sourceMap": true,
-        "strict": false
-    },
-    "exclude": [
-        "node_modules"
-    ],
-    "include": [
-    "./**/*.ts"
-    ],
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "outDir": "dist",
+    "module": "CommonJS",
+    "target": "es6",
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "sourceMap": true,
+    "strict": false
+  },
+  "exclude": ["node_modules"],
+  "include": ["./**/*.ts"]
 }

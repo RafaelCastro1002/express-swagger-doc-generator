@@ -17,14 +17,19 @@ export const insertMethodsInPathSwaggerJson = (
   const pathParams = getPathParamsFromMethod(pathParamNames);
 
   for (const method of methods) {
-    const formattedMethodName = method.toLowerCase();
+    const formattedMethodName = method.toLowerCase() as
+      | "post"
+      | "put"
+      | "patch"
+      | "delete"
+      | "get";
 
     const methodOptions = {
       ...DEFAULT_METHOD_GENERAL_OPTIONS,
       tags: [tag],
       parameters: [
         ...pathParams,
-        ...getParametersFromMethodRouter(formattedMethodName),
+        ...(getParametersFromMethodRouter(formattedMethodName) as any),
       ],
     };
 
