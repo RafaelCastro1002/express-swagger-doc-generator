@@ -2,7 +2,10 @@
   "name": "express-generate-swagger",
   "description": "generate swagger docs",
   "main": "dist/index.js",
-  "repository": "https://github.com/RafaelCastro1002/express-swagger-doc-generator.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RafaelCastro1002/express-swagger-doc-generator.git"
+  },
   "author": "Rafael Castro <rafael.castro1002@gmail.com>",
   "license": "MIT",
   "private": false,
