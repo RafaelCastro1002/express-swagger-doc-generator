@@ -8,6 +8,8 @@
   "private": false,
   "version": "1.1.0",
   "type": "commonjs",
+  "keywords": ["express", "generate", "swagger", "docs", "documentation", "ui", "typescript"],
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc"
   },
