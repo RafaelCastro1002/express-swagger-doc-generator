@@ -16,6 +16,13 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Dev
 -->
 
+## [UNRELEASED]
+
+### Added
+
+- Add all type declarations
+- Add keywords into package.json file
+
 ## [1.1.0] - 2025-05-01
 
 ### Fixed

@@ -77,7 +77,7 @@ Ao acessar a rota **/api-docs** é possível visualizar o arquivo swagger.json i
 
 Sua instância do servidor express (`app`).
 
-_**Note:** Você deve passar a instância do express como parâmetro na chamada da biblioteca quando as mesma já tenha recebido as definições de rota._
+_**Note:** Você deve passar a instância do express como parâmetro na chamada da biblioteca quando a mesma já tenha recebido as definições de rota._
 
 ### `options` - Opções de customização
 
