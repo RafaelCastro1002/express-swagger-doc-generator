@@ -9,7 +9,7 @@
   "author": "Rafael Castro <rafael.castro1002@gmail.com>",
   "license": "MIT",
   "private": false,
-  "version": "1.1.0",
+  "version": "1.1.1",
   "type": "commonjs",
   "keywords": ["express", "generate", "swagger", "docs", "documentation", "ui", "typescript"],
   "types": "dist/index.d.ts",
