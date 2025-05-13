@@ -5,7 +5,9 @@
 
 [![NPM Package Page](https://img.shields.io/badge/express--generate--swagger-gray?label=npm&labelColor=c21104)](https://www.npmjs.com/package/express-generate-swagger)
 
-Gerador de documentação swagger para servidores express.
+Gerador de documentação swagger para APIs em expressJS. O objetivo é facilitar a geração da documentação, tornando um processo simples e fácil, sem que precise de muitos esforços adicionais para incluir a documentação básica, facilitando também manter a documentação atualizada com o código.
+
+> A biblioteca está em fase de desenvolvimento constante e conto com sua ajuda para torná-la ainda melhor. De maneira simples e rápida desenvolvi uma forma de testar e validar a biblioteca e receber os feedbacks de todos que se disponibilizarem a nos ajudar, para maiores informações segue o [roteiro de validação](https://drive.google.com/file/d/1acMq1QDoqbITFHy94kpZHZ4fkyZsAy_R/view "roteiro de validação"), desde já agradeço! :)
 
 ## Exemplo de uso
 

@@ -22,6 +22,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 - Add all type declarations
 - Add keywords into package.json file
+- Add validation script into README.md file
 
 ## [1.1.0] - 2025-05-01
 
